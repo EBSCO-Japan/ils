@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="top.css">
+    <title>FTP</title>
+</head>
+
+<body>
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+        <div class="container">
+            <span class="skiplink-text">Skip to main content</span>
+        </div>
+    </a>
+
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted">EBSCO日本オフィスからお知らせします。</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="https://twitter.com/EBSCOJapan" class="text-white" target="_blank">Follow on Twitter</a></li>
+                            <li><a href="#" class="text-white">Email me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="./index.html" class="navbar-brand d-flex align-items-center">
+                    <strong>EBSCO Japan</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">EBSCOへのOPACデータ送信</h1>
+            </div>
+        </section>
+    </main>
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+                <!-- <h3 class="pb-3 mb-4 font-italic border-bottom">
+                    From the Firehose
+                </h3> -->
+
+                <!-- <div class="blog-post">
+                    <p>EBSCO Discovery Serviceに独立したデータベースとしてOPACデータを搭載する際の、データ受け渡し方法についてご案内致します。</p>
+                </div>/.blog-post -->
+                <!-- <hr> -->
+                <div class="blog-post">
+                    <h2 class="blog-post-title">FTPサーバへの接続</h2>
+                    <hr>
+                    <p>ユーザ名・パスワードはエブスコにお問い合わせください。</p>
+                    <strong>FTP接続</strong>
+                    <ul>
+                        <li>ホストアドレス：ftp.epnet.com</li>
+                        <li>モード：passive</li>
+                    </ul>
+                    <strong>SFTP接続</strong>
+                    <ul>
+                        <li>ホストアドレス：sftp.epnet.com</li>
+                        <li>ポート：22</li>
+                    </ul>
+                    <strong>ウェブサイトからの接続</strong>
+                    <ul>
+                        <li><a href="https://mft.ebscohost.com" target="_blank">https://mft.ebscohost.com</a></li>
+                    </ul>
+                </div><!-- /.blog-post -->
+
+                <div class="blog-post">
+                    <h2 class="blog-post-title">よくある質問</h2>
+                    <hr>
+                    <p><strong>ユーザ名・パスワードを入力しましたが、ログインできません。</strong>
+                    <ul class="answer">
+                        <li>パスワードを複数回誤って入力されたため、アカウントがロックされている可能性があります。
+                            EBSCOにお問い合わせください。</li>
+                        <li>FTPクライアントでのモード設定がパッシブになっていることをご確認ください。</li>
+                        <li>お問い合わせを頂戴した際には、ログを添付をお願いする場合がございます。（例：ftp -d、sftp -v）</li>
+                    </ul>
+                    </p>
+                    <p><strong>パスワードの入力が求められません。</strong>
+                    <ul class="answer">
+                        <li>.ssh/の秘密鍵が問題となっている場合があります</li>
+                        <li>SFTPの場合、-o BatchMode=noを付けると解消する場合があるようです。</li>
+                        <li>お問い合わせを頂戴した際には、ログを添付をお願いする場合がございます。（例：ftp -d、sftp -v）</li>
+                    </ul>
+                    </p>
+                    <p><strong>セキュリティの都合上、ポートを絞る必要があります。</strong></p>
+                    <ul class="answer">
+                        <li>SFTPでport=22をご利用ください。</li>
+                    </ul>
+                    <p><strong>公開鍵認証で接続をしたいのですが。</strong></p>
+                    <ul class="answer">
+                        <li>可能です。公開鍵をお送りください。鍵の受け渡しにFTPサーバをご利用いただけます。</li>
+                    </ul>
+                    <p><strong>日々の更新は差分更新をしています。一年に1度、全件入れ替えをしたいのですが。</strong></p>
+                    <ul class="answer">
+                        <li>可能です。更新時期の事前にすり合わせにご協力いただけますと幸いです。</li>
+                    </ul>
+                </div><!-- /.blog-post -->
+            </div>
+            <aside class="col-md-4 blog-sidebar">
+                <div class="p-3 bg-light rounded">
+                    <h4>参考情報[英語]</h4>
+                    <ol class="list-unstyled mb-0">
+                        <li><a
+                                href="https://connect.ebsco.com/s/article/EBSCO-Discovery-Service-EDS-Custom-Catalog-Database-Overview-Instructions?language=en_US">EDSのOPAC/IRデータベース概要</a>
+                        </li>
+                        <li><a
+                                href="https://connect.ebsco.com/s/article/Using-FTP-to-Create-and-Maintain-Records-in-your-EBSCO-Discovery-Service-EDS-Custom-Catalog-Database?language=en_US">FTPによるデータの更新ついて</a>
+                        </li>
+                        <li><a
+                                href="https://connect.ebsco.com/s/article/Getting-started-with-an-FTP-Client-for-Custom-Catalogs-and-Institutional-Repositories?language=en_US">FTPクライアントのご利用について</a>
+                        </li>
+                        <li><a
+                                href="https://connect.ebsco.com/s/article/Is-there-a-web-based-option-available-to-send-my-catalog-IR-data-to-EBSCO?language=en_US">FTP送信のウェブベースツールについて</a>
+                        </li>
+                    </ol>
+                </div>
+            </aside>
+
+
+
+        </div>
+    </main>
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p> © EBSCO</p>
+            <!-- <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p> -->
+        </div>
+    </footer>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

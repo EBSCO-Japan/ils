@@ -1,0 +1,37 @@
+.eds_img{
+    background-color: #002f56;
+}
+.eds_img div{
+    /* margin-top:90px;
+    margin-left:40px; */
+    padding-top: 25%;
+    margin-left:10px;
+    margin-right:10px;
+    height: 225px;
+    width: 90%;
+    
+}
+.folio_img{
+    margin-top:50px;
+    height: 175px;
+    width: 100%;
+}
+.ks_img{
+    margin-top:90px;
+    margin-left:40px;
+    height: 135px;
+    width: 70%;
+}
+button a{
+    color: grey;
+}
+.answer{
+    margin-left: 1em;
+    margin-bottom: 2em;
+}
+.blog-post {
+    margin-bottom: 4rem;
+}
+/* .jumbotron{
+    margin-bottom: 0;
+} */
