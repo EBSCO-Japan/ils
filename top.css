@@ -1,5 +1,21 @@
+.card a{
+ text-decoration: none;   
+}
 .eds_img{
     background-color: #002f56;
+}
+.card_text_img{
+    background-color: #445F87;
+    color: white;
+    text-align: center;
+    height: 225px;
+    padding-top: 25%;
+    font-family: sans-serif;
+    font-size: xx-large
+}
+.eds_api{
+    background-color: #C8D2E1;
+    color: white;
 }
 .eds_img div{
     /* margin-top:90px;

@@ -17,39 +17,47 @@
     </a>
 
     <header>
-        <div class="collapse bg-dark" id="navbarHeader">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-md-7 py-4">
-                        <h4 class="text-white">About</h4>
-                        <p class="text-muted">EBSCO日本オフィスからお知らせします。</p>
-                    </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-white">Contact</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="https://twitter.com/EBSCOJapan" class="text-white" target="_blank">Follow on Twitter</a></li>
-                            <li><a href="#" class="text-white">Email me</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="navbar navbar-dark bg-dark shadow-sm">
-            <div class="container d-flex justify-content-between">
-                <a href="./index.html" class="navbar-brand d-flex align-items-center">
-                    <strong>EBSCO Japan</strong>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
-                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="../index.html"><strong>EBSCO Japan</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
+                    aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample03">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../eds/index.html" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">EDS</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown03">
+                                <a class="dropdown-item" href="../eds/faq.html">FAQ</a>
+                                <a class="dropdown-item" href="../eds/gen.html">概要</a>
+                                <a class="dropdown-item" href="../eds/ftp.html">データ送信</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../ftf/index.html" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">FTF</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown03">
+                                <a class="dropdown-item" href="../ftf/faq.html">FAQ</a>
+                                <a class="dropdown-item" href="../ftf/gen.html">概要</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
     <main role="main">
         <section class="jumbotron text-center">
             <div class="container">
-                <h1 class="jumbotron-heading">FAQ</h1>
+                <h1 class="jumbotron-heading">EDS FAQ</h1>
             </div>
         </section>
     </main>
@@ -62,18 +70,25 @@
                     <hr>
                     <p><strong>Firewall、プロキシ等の設定のため、EBSCOドメインを教えてください。</strong></p>
                     <ul class="answer">
-                        <li>サポートページ「<a href="https://connect.ebsco.com/s/article/EBSCO-Domains-for-Firewalls-Proxy-Servers-and-Allow-Lists?language=en_US">EBSCO
+                        <li>サポートページ「<a
+                                href="https://connect.ebsco.com/s/article/EBSCO-Domains-for-Firewalls-Proxy-Servers-and-Allow-Lists?language=en_US">EBSCO
                                 Domains for Firewalls, Proxy Servers, and Allow Lists</a>」をご確認ください。</li>
                     </ul>
-
-                    
                 </div><!-- /.blog-post -->
+
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Holdings管理画面について</h2>
+                    <hr>
+                    <p><a href="../ftf/faq.html">こちらのページ</a>をご覧ください。</p>
+                </div><!-- /.blog-post -->
+
             </div>
             <aside class="col-md-4 blog-sidebar">
                 <div class="p-3 bg-light rounded">
                     <strong>参考情報[日本語]</strong>
                     <ol class="list-unstyled mb-0">
-                        <li><a href="https://connect.ebsco.com/s/article/%E6%97%A5%E6%9C%AC%E8%AA%9E%E8%B3%87%E6%96%99?language=en_US">日本語サポート資料</a>
+                        <li><a
+                                href="https://connect.ebsco.com/s/article/%E6%97%A5%E6%9C%AC%E8%AA%9E%E8%B3%87%E6%96%99?language=en_US">日本語サポート資料</a>
                         </li>
                     </ol>
                 </div>
