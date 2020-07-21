@@ -48,6 +48,10 @@ button a{
 .blog-post {
     margin-bottom: 4rem;
 }
-/* .jumbotron{
+.jumbotron{
     margin-bottom: 0;
-} */
+}
+.jumbotron.faq{
+    margin-bottom: 2em;
+}
+
