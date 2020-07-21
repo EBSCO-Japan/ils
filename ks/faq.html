@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../top.css">
+    <title>FAQ_KS</title>
+</head>
+
+<body>
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+        <div class="container">
+            <span class="skiplink-text">Skip to main content</span>
+        </div>
+    </a>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html"><strong>EBSCO Japan</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
+                    aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample03">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../eds/index.html" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">EDS</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown03">
+                                <a class="dropdown-item" href="../eds/faq.html">FAQ</a>
+                                <a class="dropdown-item" href="../eds/gen.html">概要</a>
+                                <a class="dropdown-item" href="../eds/ftp.html">データ送信</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../ftf/index.html" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">FTF</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown03">
+                                <a class="dropdown-item" href="../ftf/faq.html">FAQ</a>
+                                <a class="dropdown-item" href="../ftf/gen.html">概要</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">EBSCO Knowledge Service FAQ</h1>
+            </div>
+        </section>
+    </main>
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+
+                <div class="blog-post">
+                    <h2 class="blog-post-title">製品について</h2>
+                    <hr>
+                    <p><strong>EBSCO Knowledge Serviceとは何ですか。</strong></p>
+                    <ul class="answer">
+                        <li>EBSCOが提供しているAPIサービスです。</li>
+                    </ul>
+
+                </div><!-- /.blog-post -->
+
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Holdings Managementについて</h2>
+                    <hr>
+                    <p><strong>Holdings Managementの使い方を教えてください。</strong></p>
+                    <ul class="answer">
+                        <li><a href="./gen.html">こちらのページ</a>の「Holidngs Managementユーザガイド」をご覧ください。</li>
+                    </ul>
+
+                    <p><strong>ナレッジベースの情報はどこからダウンロードできますか。</strong></p>
+                    <ul class="answer">
+                        <li><a href="./gen.html">こちらのページ</a>の「Holidngs Managementユーザガイド」をご覧ください。</li>
+                        <li>ナレッジベースの情報は、APIからも取得可能です。</li>
+                    </ul>
+
+                    <p><strong>ナレッジベースのダウンロード形式は何ですか。</strong></p>
+                    <ul class="answer">
+                        <li>csvの他に、Tab区切りのテキストとxmlでの取得が可能です。</li>
+                        <li>ナレッジベースの情報は、APIからも取得可能です。その場合のフォーマットはKBARTです。</li>
+                    </ul>
+
+                    <p><strong>Holdings Managementからダウンロードした所蔵情報のカラム定義を教えてください。</strong></p>
+                    <ul class="answer">
+                        <li><a
+                                href="https://connect.ebsco.com/s/article/Holdings-Management-Supported-Column-Headings-for-Upload-Download?language=en_US">サポートページ</a>をご覧ください。
+                        </li>
+                    </ul>
+
+                    <p><strong>KBIDはユニークキーですか？</strong></p>
+                    <ul class="answer">
+                        <li>いいえ、違います。同じタイトルを別提供元で契約している場合、複数KBIDが発生します。</li>
+                    </ul>
+
+                    <p><strong>KBIDとアクセス先URLで複合ユニークキーになりますか？</strong></p>
+                    <ul class="answer">
+                        <li>いいえ、なりません。オープンアクセスパッケージもある場合、KBIDもアクセス先URLも同じになることがあります。</li>
+                    </ul>
+
+                    <p><strong>実際のお客様の所蔵データを見たいのですが。</strong></p>
+                    <ul class="answer">
+                        <li>お客様がHolidngs Managementにアクセスできる場合、お客様ご自身で確認ができます。</li>
+                    </ul>
+
+                    <p><strong>実際にHoldings Managementを触ってみたいのですが。</strong></p>
+                    <ul class="answer">
+                        <li>EBSCOにご連絡ください。</li>
+                    </ul>
+
+                </div><!-- /.blog-post -->
+            </div>
+            <aside class="col-md-4 blog-sidebar">
+                <div class="p-3 bg-light rounded">
+                    こちらも併せてご覧ください：
+                    <ol class="list-unstyled mb-0">
+                        <li><a href="../eds/faq.html">EDS FAQ</a>
+                        </li>
+                        <li><a href="./gen.html">FTF 概要</a>
+                        </li>
+                    </ol>
+                </div>
+                <div class="p-3 bg-light rounded">
+                    <strong>参考情報[英語]</strong>
+                    <ol class="list-unstyled mb-0">
+                        <li><a href="https://connect.ebsco.com/s/?language=en_US">EBSCOサポートページ</a>
+                        </li>
+                    </ol>
+                </div>
+            </aside>
+
+
+
+        </div>
+    </main>
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p> © EBSCO</p>
+            <!-- <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p> -->
+        </div>
+    </footer>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

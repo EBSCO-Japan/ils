@@ -6,7 +6,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="top.css">
-  <title>index</title>
+<title>index</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(function () {
+      $("#header").load("./header.html");
+    });
+  </script>
 </head>
 
 <body>
@@ -16,43 +22,7 @@
     </div>
   </a>
 
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-          <a class="navbar-brand" href="../index.html"><strong>EBSCO Japan</strong></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
-              aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarsExample03">
-              <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                      <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="../eds/index.html" data-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="false">EDS</a>
-                      <div class="dropdown-menu" aria-labelledby="dropdown03">
-                          <a class="dropdown-item" href="../eds/faq.html">FAQ</a>
-                          <a class="dropdown-item" href="../eds/gen.html">概要</a>
-                          <a class="dropdown-item" href="../eds/ftp.html">データ送信</a>
-                      </div>
-                  </li>
-
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="../ftf/index.html" data-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="false">FTF</a>
-                      <div class="dropdown-menu" aria-labelledby="dropdown03">
-                          <a class="dropdown-item" href="../ftf/faq.html">FAQ</a>
-                          <a class="dropdown-item" href="../ftf/gen.html">概要</a>
-                      </div>
-                  </li>
-
-              </ul>
-          </div>
-      </div>
-  </nav>
+  <header id="header">
   </header>
 
   <main role="main">
@@ -143,14 +113,17 @@
           </div>
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <div class="ks_img"><img class="card-img-top"
-                  src="https://www.ebsco.com/sites/g/files/nabnos191/files/acquiadam-assets/knowledge-services-logo-205.png">
+              <div class="ks_img">
+                <a href="./ks/index.html">
+                  <img class="card-img-top"
+                    src="https://www.ebsco.com/sites/g/files/nabnos191/files/acquiadam-assets/knowledge-services-logo-205.png">
+                </a>
               </div>
               <div class="card-body">
                 <p class="card-text">[工事中]EBSCO Knowledge Serviceについて</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <a class="btn btn-sm btn-outline-secondary" href="./ks/index.html" role="button">View</a>
                   </div>
                 </div>
               </div>
@@ -175,9 +148,6 @@
 
 
   <!-- JS, Popper.js, and jQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
