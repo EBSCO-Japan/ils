@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107280086-4"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-107280086-4');
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="../top.css">
+    <link rel="stylesheet" href="https://unpkg.com/jpn.css@latest/dist/bootstrap/jpn.min.css" id="jpncss">
     <title>FTP</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
@@ -83,7 +84,7 @@
                     </p>
                     <p><strong>パスワードの入力が求められません。</strong>
                     <ul class="answer">
-                        <li>.ssh/の秘密鍵が問題となっている場合があります</li>
+                        <li>.ssh/の秘密鍵が問題となっている場合があります。</li>
                         <li>SFTPの場合、-o BatchMode=noを付けると解消する場合があるようです。</li>
                         <li>お問い合わせを頂戴した際には、ログを添付をお願いする場合がございます。（例：ftp -d、sftp -v）</li>
                     </ul>
@@ -94,7 +95,7 @@
                     </ul>
                     <p><strong>公開鍵認証で接続をしたいのですが。</strong></p>
                     <ul class="answer">
-                        <li>可能です。公開鍵をお送りください。鍵の受け渡しにFTPサーバをご利用いただけます。</li>
+                        <li>可能です。公開鍵をEBSCOにお送りください。鍵の受け渡しにFTPサーバをご利用いただけます。</li>
                     </ul>
                     <p><strong>日々の更新は差分更新をしています。一年に1度、全件入れ替えをしたいのですが。</strong></p>
                     <ul class="answer">
@@ -104,19 +105,23 @@
             </div>
             <aside class="col-md-4 blog-sidebar">
                 <div class="p-3 bg-light rounded">
-                    <h4>参考情報[英語]</h4>
+                    参考情報：
                     <ol class="list-unstyled mb-0">
                         <li><a
                                 href="https://connect.ebsco.com/s/article/EBSCO-Discovery-Service-EDS-Custom-Catalog-Database-Overview-Instructions?language=en_US">EDSのOPAC/IRデータベース概要</a>
+                            <span class="badge badge-secondary">英語</span>
                         </li>
                         <li><a
                                 href="https://connect.ebsco.com/s/article/Using-FTP-to-Create-and-Maintain-Records-in-your-EBSCO-Discovery-Service-EDS-Custom-Catalog-Database?language=en_US">FTPによるデータの更新ついて</a>
+                            <span class="badge badge-secondary">英語</span>
                         </li>
                         <li><a
                                 href="https://connect.ebsco.com/s/article/Getting-started-with-an-FTP-Client-for-Custom-Catalogs-and-Institutional-Repositories?language=en_US">FTPクライアントのご利用について</a>
+                            <span class="badge badge-secondary">英語</span>
                         </li>
                         <li><a
-                                href="https://connect.ebsco.com/s/article/Is-there-a-web-based-option-available-to-send-my-catalog-IR-data-to-EBSCO?language=en_US">FTP送信のウェブベースツールについて</a>
+                                href="https://connect.ebsco.com/s/article/Is-there-a-web-based-option-available-to-send-my-catalog-IR-data-to-EBSCO?language=en_US">ウェブFTPクライアントについて</a>
+                            <span class="badge badge-secondary">英語</span>
                         </li>
                     </ol>
                 </div>

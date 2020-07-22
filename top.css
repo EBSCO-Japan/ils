@@ -57,11 +57,6 @@ button a{
 .badge{
     margin-left:1em;
 }
-body {
-    font-family: "Helvetica Neue",
-      Arial,
-      "Hiragino Kaku Gothic ProN",
-      "Hiragino Sans",
-      Meiryo,
-      sans-serif;
-  }
+footer{
+    margin-top: 5em;;
+}

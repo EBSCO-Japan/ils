@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107280086-4"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-107280086-4');
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="../top.css">
+    <link rel="stylesheet" href="https://unpkg.com/jpn.css@latest/dist/bootstrap/jpn.min.css" id="jpncss">
     <title>FAQ_Folio</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
@@ -47,44 +48,126 @@
                 <div class="blog-post">
                     <h2 class="blog-post-title">Folioプロジェクトについて</h2>
                     <hr>
-                    <p><strong>EBSCO Knowledge Serviceとは何ですか。</strong></p>
+                    <p><strong>Folioプロジェクトとは何ですか。</strong></p>
                     <ul class="answer">
-                        <li>EBSCOが提供しているAPIサービスです。</li>
+                        <li>オープンソースでLSP(Library Service Platform)を作ろう、というオープンソースプロジェクトです。
+                        </li>
                     </ul>
-
-                    <p><strong>どのようなAPIがありますか。</strong></p>
+                    <p><strong>LSPとは何ですか。</strong></p>
                     <ul class="answer">
-                        <li>以下の4つのサービスがあります。詳しくは<a href="./gen.html">概要ページ</a>をご覧ください。</li>
+                        <li>ILS（Integrated Library System、既存図書館業務システム）にERMS（E-resource Management
+                            System）等を付加したシステムがLSPと呼ばれているようです。
+                        </li>
                     </ul>
-
-                    <p><strong>Publication IQとPublication Finder APIは何が違いますか。</strong></p>
+                    <p><strong>ライセンスは何ですか。</strong></p>
                     <ul class="answer">
-                        <li>Publication IQはEBSCOの新しいPublication Finderインタフェースに対応しております。
-                            <br>違いの一例として、Publication IQには日本語インデックス機能があります。</li>
+                        <li><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License Version
+                                2.0</a>です。
+                        </li>
                     </ul>
-
+                    <p><strong>開発スケジュールを教えてください。</strong></p>
+                    <ul class="answer">
+                        <li>プロジェクトWikiの<a href="https://wiki.folio.org/display/PC/FOLIO+Roadmap" target="_blank">Folio
+                                Roadmap</a>をご覧ください。
+                        </li>
+                    </ul>
+                    <p><strong>デモサイトはありますか。</strong></p>
+                    <ul class="answer">
+                        <li><a href="https://wiki.folio.org/" target="_blank">プロジェクトWiki</a>のDemo Sitesをご覧ください。<br>
+                            diku_admin / adminでログインできます。
+                            <ul>
+                                <li>最新スナップショット: <a href="https://folio-snapshot.aws.indexdata.com/"
+                                        target="_blank">https://folio-snapshot.aws.indexdata.com/</a></li>
+                                <li>安定版スナップショット: <a href="https://folio-snapshot-stable.aws.indexdata.com/"
+                                        target="_blank">https://folio-snapshot-stable.aws.indexdata.com/</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><strong>分からない単語があります。</strong></p>
+                    <ul class="answer">
+                        <li>プロジェクトWikiの<a href="https://wiki.folio.org/display/PC/Glossary+of+Terms"
+                                target="_blank">Glossary of Terms</a>をご覧ください。
+                        </li>
+                    </ul>
                 </div><!-- /.blog-post -->
+                <div class="blog-post">
+                    <h2 class="blog-post-title">導入について</h2>
+                    <hr>
+                    <p><strong>導入校はありますか。</strong></p>
+                    <ul class="answer">
+                        <li>プロジェクトWikiの<a href="https://wiki.folio.org/display/COHORT2019" target="_blank">Folio
+                                Implementation Group</a>をご覧ください。
+                        </li>
+                        <li>プロジェクトWikiの<a href="https://wiki.folio.org/display/COHORT2019/Implementation+Details"
+                                target="_blank">Implementation Details</a>をご覧ください。
+                        </li>
+                    </ul>
+                    <p><strong>ERMSだけ導入した機関はありますか。</strong></p>
+                    <ul class="answer">
+                        <li>プロジェクトWikiの<a href="https://wiki.folio.org/display/COHORT2019/Implementation+Details"
+                                target="_blank">Implementation Details</a>をご覧ください。
+                        </li>
+                    </ul>
+                </div>
+                <div class="blog-post">
+                    <h2 class="blog-post-title">機能について</h2>
+                    <hr>
+                    <p><strong>ユーザーガイドはありますか。</strong></p>
+                    <ul class="answer">
+                        <li>プロジェクトWikiの<a href="https://wiki.folio.org/display/FOLIOtips/Information+and+User+Guides+for+FOLIO+Apps" target="_blank">Folio
+                            Information and User Guides for FOLIO Apps</a>をご覧ください。
+                        </li>
+                    </ul>
+                </div>
                 <div class="blog-post">
                     <h2 class="blog-post-title">開発について</h2>
                     <hr>
+                    <p><strong>Folioの開発には、どのようなスキルが求められますか。</strong></p>
+                    <ul class="answer">
+                        <li><a href="https://wiki.folio.org/display/TC/Technical+Skills+in+Demand" target="_blank">
+                                プロジェクトの求人ページ</a>が参考になるかと思います。
+                        </li>
+                        <li>キーワードとなるのは以下の通りです。<br>
+                            <ul>
+                                <li>バックエンド：
+                                    <ul>
+                                        <li>Java8</li>
+                                        <li>マイクロサービスモデルの実装</li>
+                                        <li>PostgreSQL</li>
+                                        <li>Docker/Vagrant</li>
+                                    </ul>
+                                </li>
+                                <li>フロントエンド：
+                                    <ul>
+                                        <li>React</li>
+                                    </ul>
+                                </li>
+                                <li>バックエンド・フロントエンド共通：
+                                    <ul>
+                                        <li>CI/CD</li>
+                                        <li>Node JS</li>
+                                        <li>セキュリティ（SSO、OAUTH、SAML、LADP）</li>
+                                        <li>Git/GitHub</li>
+                                    </ul>
+                                </li>
+                                <li>インフラ：
+                                    <ul>
+                                        <li>CI/CD（Jenkins）</li>
+                                        <li>インフラ自動化（Ansible/Puppet/Chef）</li>
+                                        <li>Dockerオーケストレーション（Kubernetes/ECS/Rancher）</li>
+                                        <li>クラウド（AWS/Google Cloud）</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div><!-- /.blog-post -->
             </div>
             <aside class="col-md-4 blog-sidebar">
                 <div class="p-3 bg-light rounded">
                     <strong>こちらも併せてご覧ください：</strong>
                     <ol class="list-unstyled mb-0">
-                        <li><a href="./gen.html">Knowledge Services 概要</a>
-                        </li>
-                        <li><a href="../eds/faq.html">EDS FAQ</a>
-                        </li>
-                        <li><a href="../ftf/gen.html">FTF 概要</a>
-                        </li>
-                    </ol>
-                </div>
-                <div class="p-3 bg-light rounded">
-                    <strong>参考情報[英語]</strong>
-                    <ol class="list-unstyled mb-0">
-                        <li><a href="https://connect.ebsco.com/s/?language=en_US">EBSCOサポートページ</a>
+                        <li><a href="./gen.html">Folioリンク集</a>
                         </li>
                     </ol>
                 </div>
