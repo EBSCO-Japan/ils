@@ -63,3 +63,13 @@ button a{
 footer{
     margin-top: 5em;;
 }
+.btn-primary{
+    background-color:#3E75CF;
+    border-color: #3E75CF;
+}
+.bg-dark{
+    background-color: #002f56 !important;
+}
+.nav-link{
+    color: #EFEFEF !important;
+}
